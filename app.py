@@ -3,13 +3,11 @@ from flask_cors import CORS, cross_origin
 from PIL import Image
 import base64
 from io import BytesIO
-import requests
 import numpy as np
 import cv2
 import pickle
 from keras.models import load_model
 from keras.layers import Rescaling
-import matplotlib.pyplot as plt
 labels = pickle.load(open("LE.pkl", "rb"))
 model = load_model("model.h5")
 

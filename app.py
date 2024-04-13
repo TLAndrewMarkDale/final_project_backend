@@ -45,3 +45,6 @@ def image_check():
 
     #print(classes[index])
     return jsonify({'result': lesion_types[type_of_lesion[0]]})
+
+if __name__ == '__main__':
+    app.run(debug=True)

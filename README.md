@@ -27,28 +27,31 @@ Ensure you have Python 3 installed on your system. You can then follow these ste
  
 Clone the repository:
  
-bash
 Copy code
+
 git clone [repository-url]
 cd [repository-folder]
 Set up a virtual environment (optional but recommended):
  
-bash
 Copy code
+
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install dependencies:
  
-bash
 Copy code
+
 pip install flask flask-cors numpy opencv-python-headless pillow keras
+
 Start the server:
- 
-bash
-Copy code
+ Copy code
 python app.py
+
 API Usage
-Endpoint: /classify
+Endpoint: 
+
+/classify
+
 Method: POST
 Body:
 json
@@ -65,10 +68,13 @@ Copy code
 Example:
 Using curl to send a POST request:
  
-bash
 Copy code
+
 curl -X POST http://localhost:5000/classify -H "Content-Type: application/json" -d '{"image":"base64_encoded_image"}'
+
+
 Model Information
+
 The classification model is built with Keras and trained on a dataset containing various types of skin lesions. The model file model.h5 and label encoder LE.pkl should be placed in the root directory.
  
 Troubleshooting

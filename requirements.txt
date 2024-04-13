@@ -11,3 +11,5 @@ keras
 tensorflow-cpu
 gunicorn
 pandas
+sklearn
+scikit-learn

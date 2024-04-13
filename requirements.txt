@@ -3,7 +3,7 @@ requests
 flask_cors
 flask
 keras
-opencv-python
+opencv-contrib-python-headless
 numpy
 matplotlib
 Pillow
